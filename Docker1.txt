@@ -1,0 +1,54 @@
+Docker commands
+
+1) sudo su
+
+2) yum install docker -y
+
+3) service docker start
+
+4) docker images
+
+5) docker pull nginx
+
+6) docker run -it ubuntu /bin/bash    (it will create a container with ubuntu image and you will enter inside the container as you are using it) 
+
+7) ls
+ 
+8) exit
+9) docker ps -a   (show you all the process which is created in your ec2 machine) 
+
+(copy the name of any container)
+
+10) docker start <<container name>>
+
+11) docker attach <<container name>>>   (you will enter inside the container ....you will only be able to enter if your container is running)  
+
+12) touch file1   (create a blank file) 
+
+12.1) exit 
+
+13) docker start <<container name>>
+
+14) docker attach <<containername> 
+
+15) ls   (you will see that container have file file1 since u have again started the same container which u started in sno10) 
+
+16) docker info (it will give you all the information about the container ) 
+
+17)  docker start <<container name>>
+
+18) docker attach <<containername
+
+19) to exit the container without stopping the process....press ctrl P followed by ctrl Q 
+
+20) docker run -it --name c01 ubuntu /bin/bash     (create a container with name c01 )
+
+21) docker ps -a (you will see the container with name c01) 
+
+22) docker rmi <<image>>  (delete the image from your docker registry) 
+
+23) docker images -q (show only the image ids) 
+
+24) docker image inspect ubuntu
+
+

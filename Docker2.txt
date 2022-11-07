@@ -1,0 +1,11 @@
+1) docker run -it --name container1 ubuntu /bin/bash
+
+2) touch file1 file2 file3 file4 
+
+3) exit
+
+4) docker commit image1 container1    (create a custom image with name image1 from container1) 
+
+5) docker images  (you will see a image with name image1)
+
+6) docker run -it --name container2 image1 /bin/bash  (it will create a container2 with base image as container 1) 
